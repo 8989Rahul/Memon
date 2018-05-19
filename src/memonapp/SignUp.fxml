@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memonapp.SignUpController">
+    <stylesheets>
+        <URL value="@signup.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="100.0" prefWidth="1000.0" style="-fx-background-color: red;">
+         <children>
+            <Label layoutX="385.0" layoutY="14.0" text="MEMON" textFill="WHITE">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="login" alignment="CENTER" layoutX="847.0" layoutY="37.0" onAction="#clickedOnLogin" prefWidth="120.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Login">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXTextField layoutX="282.0" layoutY="155.0" prefWidth="500.0" promptText="FirstName">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="signup" alignment="CENTER" layoutX="284.0" layoutY="495.0" onAction="#clickedOnSignUp" prefHeight="0.0" prefWidth="500.0" style="-fx-background-color: black;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="password" layoutX="285.0" layoutY="394.0" prefWidth="500.0" promptText="Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXTextField layoutX="282.0" layoutY="233.0" prefWidth="500.0" promptText="LastName">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="username" layoutX="282.0" layoutY="317.0" prefWidth="500.0" promptText="UserName">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

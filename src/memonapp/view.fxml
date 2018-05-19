@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="972.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="memonapp.ViewController">
+    <stylesheets>
+        <URL value="@view.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="102.0" prefWidth="1010.0" style="-fx-background-color: red;">
+         <children>
+            <Label layoutX="389.0" layoutY="14.0" text="MEMON" textFill="WHITE">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="add" layoutX="874.0" layoutY="35.0" onAction="#clickedOnAdd" prefHeight="39.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Add">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXListView fx:id="listview" layoutY="102.0" prefHeight="463.0" prefWidth="1009.0" />
+   </children>
+</AnchorPane>
